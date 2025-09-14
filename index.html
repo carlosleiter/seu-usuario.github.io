@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JH Manutenção Industrial - Excelência e Confiabilidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a', // Azul escuro
+                        secondary: '#fcd34d', // Amarelo
+                        light: '#f3f4f6', // Cinza claro
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .hero-bg {
+            background-image: url('https://placehold.co/1584x396/1f2937/FFFFFF?text=Equipamentos%20Rotativos');
+            background-size: cover;
+            background-position: center;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-bold text-primary">JH Manutenção</a>
+            <div class="flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-primary transition-colors duration-300">Início</a>
+                <a href="#servicos" class="text-gray-600 hover:text-primary transition-colors duration-300">Serviços</a>
+                <a href="#sobre" class="text-gray-600 hover:text-primary transition-colors duration-300">Sobre</a>
+                <a href="#contato" class="text-gray-600 hover:text-primary transition-colors duration-300">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-bg h-[60vh] flex items-center justify-center text-center text-white relative">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 p-6 rounded-xl animate-fadeIn">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+                Excelência em Manutenção e Confiabilidade
+            </h1>
+            <p class="text-lg md:text-2xl font-light max-w-2xl mx-auto">
+                Especialistas em equipamentos rotativos para otimizar sua produtividade e reduzir custos operacionais.
+            </p>
+            <a href="#contato" class="mt-8 inline-block px-8 py-3 bg-secondary text-primary font-bold rounded-full shadow-lg hover:bg-yellow-400 transition-colors duration-300 transform hover:scale-105">
+                Solicite um Orçamento
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Services Section -->
+        <section id="servicos" class="py-16">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M12 15h.01" />
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Manutenção Preventiva</h3>
+                    <p class="text-gray-600">Planejamento e execução de manutenções para evitar falhas e prolongar a vida útil dos equipamentos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9a2 2 0 00-2-2h-7a2 2 0 00-2 2v10a2 2 0 002 2zM15 15l-4-4m0 0l-4 4m4-4V3" />
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Manutenção Corretiva</h3>
+                    <p class="text-gray-600">Serviços rápidos e eficientes para solucionar falhas inesperadas e restabelecer a operação.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Comissionamento</h3>
+                    <p class="text-gray-600">Testes e verificações para garantir que novos equipamentos operem com segurança e performance.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Análise de Falhas</h3>
+                    <p class="text-gray-600">Investigação profunda de falhas para identificar a causa raiz e evitar recorrências.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="py-16 bg-light rounded-xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/1e3a8a/FFFFFF?text=Equipe%20Técnica" alt="Equipe Técnica da JH Manutenção Industrial" class="rounded-xl shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-6">Sobre a JH Manutenção Industrial</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Com uma sólida experiência de **16 anos** no mercado, a JH Manutenção Industrial nasceu do compromisso em oferecer soluções completas e de alta performance. Nossa expertise em equipamentos rotativos se estende aos setores de óleo e gás, mineração e saneamento.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Nossa equipe é formada por profissionais altamente qualificados, que operam com as mais rigorosas normas de qualidade e segurança (incluindo as normas API), garantindo que cada serviço supere as expectativas de nossos clientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="py-16">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Entre em Contato</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
+                        <input type="text" id="nome" name="nome" class="mt-1 block w-full px-4 py-2 bg-gray-100 border-gray-300 rounded-lg shadow-sm focus:ring-primary focus:border-primary">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 bg-gray-100 border-gray-300 rounded-lg shadow-sm focus:ring-primary focus:border-primary">
+                    </div>
+                    <div>
+                        <label for="assunto" class="block text-sm font-medium text-gray-700">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" class="mt-1 block w-full px-4 py-2 bg-gray-100 border-gray-300 rounded-lg shadow-sm focus:ring-primary focus:border-primary">
+                    </div>
+                    <div>
+                        <label for="mensagem" class="block text-sm font-medium text-gray-700">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" class="mt-1 block w-full px-4 py-2 bg-gray-100 border-gray-300 rounded-lg shadow-sm focus:ring-primary focus:border-primary"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="w-full px-8 py-3 bg-primary text-white font-bold rounded-lg shadow-lg hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 JH Manutenção Industrial. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
